@@ -1,6 +1,6 @@
-import type { CloudinaryImage } from './types';
+import type { UploadApiResponse } from 'cloudinary';
 
-export function parseCloudinaryImage(image: CloudinaryImage): AppImage {
+export function parseCloudinaryImage(image: UploadApiResponse): AppImage {
 	return {
 		create_at: image.created_at,
 		format: image.format,
