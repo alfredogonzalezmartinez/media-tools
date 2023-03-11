@@ -1,5 +1,5 @@
 import { removeBackgroundImage } from '$lib/server/services/image/removeBackground';
-import { storeTemporaryWhileTaskRuns } from '$lib/server/services/tempStore/storeTemporaryWhileTaskRuns';
+import { storeTemporaryWhileTaskRuns } from '$lib/server/utils/temporaryStorage/storeTemporaryWhileTaskRuns';
 import { error } from '@sveltejs/kit';
 import type { RequestHandler } from '../$types';
 

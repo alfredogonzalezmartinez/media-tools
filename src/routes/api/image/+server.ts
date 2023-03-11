@@ -1,5 +1,5 @@
 import { uploadImage } from '$lib/server/services/image/uploadImage';
-import { storeTemporaryWhileTaskRuns } from '$lib/server/services/tempStore/storeTemporaryWhileTaskRuns';
+import { storeTemporaryWhileTaskRuns } from '$lib/server/utils/temporaryStorage/storeTemporaryWhileTaskRuns';
 import { error } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
