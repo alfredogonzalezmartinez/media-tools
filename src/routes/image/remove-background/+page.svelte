@@ -1,5 +1,5 @@
 <script>
-	import ImageUploadDropzone from '$lib/components/ImageUploadDropzone/ImageUploadDropzone.svelte';
+	import ImagePicker from '$lib/components/ImagePicker/ImagePicker.svelte';
 	import ToolTitle from '$lib/components/ToolTitle/ToolTitle.svelte';
 </script>
 
@@ -9,4 +9,4 @@
 
 <ToolTitle>Image background remover</ToolTitle>
 
-<ImageUploadDropzone />
+<ImagePicker />
