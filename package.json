@@ -17,6 +17,7 @@
 		"@cloudinary/url-gen": "1.9.1",
 		"cloudinary": "1.35.0",
 		"dropzone": "6.0.0-beta.2",
+		"locally-unique-id-generator": "0.1.5",
 		"tempy": "3.0.0"
 	},
 	"devDependencies": {
