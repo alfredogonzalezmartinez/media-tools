@@ -1,13 +1,11 @@
 <script lang="ts">
-	import { IMAGE_ACTIONS, type IMAGE_ACTION } from '$lib/Constants/images/imageActions';
 	import { getNewUniqueId } from '$lib/utils/id/getNewUniqueId';
 	import Dropzone from 'dropzone';
 	import { onMount } from 'svelte';
 
-	export let action: IMAGE_ACTION;
+	export let actionUrl: string;
 
 	const dropzoneID = `dropzone-${getNewUniqueId()}`;
-	const actionUrl = IMAGE_ACTIONS[action]?.url;
 
 	onMount(() => {
 		const dropzone = new Dropzone(`#${dropzoneID}`, {
