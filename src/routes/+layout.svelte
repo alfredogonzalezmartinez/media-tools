@@ -3,15 +3,11 @@
 	import '$lib/styles/app.postcss';
 </script>
 
-<svelte:head>
-	<title>MediaTools</title>
-</svelte:head>
-
-<div class="w-full flex flex-col min-h-screen bg-slate-50">
-	<header class="py-4 bg-slate-200 w-full">
+<div class="flex min-h-screen w-full flex-col bg-slate-50">
+	<header class="w-full bg-slate-200 py-4">
 		<ContentContainer>
 			<a href="/">
-				<h1 class="text-3xl text-orange-600 font-bold">
+				<h1 class="text-3xl font-bold text-orange-600">
 					Media<span class="text-gray-500">Tools</span>
 				</h1>
 			</a>
