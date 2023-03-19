@@ -1,18 +1,20 @@
-enum IMAGE_ACTION {
-	Upload = 'upload',
-	RemoveBackground = 'removeBackground'
-}
-
-type ImageTool = {
+export type ImageTool = {
 	apiUrl: string;
 	appUrl: string;
 	isEnabled: boolean;
 	title: string;
 };
 
-type ImageTools = {
-	[action in IMAGE_ACTION]: ImageTool;
+export type ImageTools = {
+	[action in ImageAction]: ImageTool;
 };
+
+export type ImageAction = (typeof IMAGE_ACTION)[keyof typeof IMAGE_ACTION];
+
+export const IMAGE_ACTION = {
+	upload: 'upload',
+	removeBackground: 'removeBackground'
+} as const;
 
 export const IMAGE_TOOL: ImageTools = {
 	upload: {
@@ -27,4 +29,4 @@ export const IMAGE_TOOL: ImageTools = {
 		isEnabled: true,
 		title: 'Image background remover'
 	}
-};
+} as const;
